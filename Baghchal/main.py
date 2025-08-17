@@ -1,6 +1,7 @@
 import pygame
 import sys
 import math
+import copy
 
 #gui for mode selection
 def main_menu():
@@ -183,9 +184,6 @@ def get_all_moves(st, player):
 
     return moves
 
-
-#to simulate move by ai for minimax as moving in real game will create a clutter
-import copy
 
 def simulate_move(st, move, player):
     ns = copy.deepcopy(st)
